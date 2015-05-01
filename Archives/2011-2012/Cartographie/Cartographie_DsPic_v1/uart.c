@@ -63,7 +63,7 @@ void sendCoor(Coor list, int longueur, int longPlusChemin)
 	tr.first.nb = nbCoor(list);
 	tr.first.code = 0b1011;
 	send_message_carto(tr.l);
-	
+
 	while ( p != NULL)
     {
 	    tr2.l = 0;
@@ -72,7 +72,7 @@ void sendCoor(Coor list, int longueur, int longPlusChemin)
 		tr2.data.numero = numero;
 		tr2.data.code = 0b010;
 		send_message_carto(tr2.l);
-        
+
         if (p->queue != NULL)
         {
 	        tr2.l = 0;
@@ -85,8 +85,8 @@ void sendCoor(Coor list, int longueur, int longPlusChemin)
 		}
 		p = p->queue;
     }
-   
-	
+
+
 }
 
 void UART_putc_carto(unsigned char c)

@@ -9,7 +9,7 @@ short distLHigh, distRHigh;
 
 void motors_set_speed (short speedL, short speedR) {
 	
-   	if (speedL == 0)    // On s arrete
+    if (speedL == 0)    // On s arrete
     {
         PWM1CON1bits.PEN1H = 0;	// /!\ Reset le timer
         PWM1CON1bits.PEN1L = 0;

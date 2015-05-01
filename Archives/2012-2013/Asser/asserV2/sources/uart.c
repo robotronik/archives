@@ -24,7 +24,7 @@ void sendDone(void)
 {
 	UART_putc(DONE);
 //	UART_putc('A');
-}	
+}
 
 
 void sendDerapage(void)
@@ -44,13 +44,13 @@ IFS0bits.U1TXIF = 0;
 IEC0bits.U1TXIE = 1;	// Activation de l'interruption sur l'envoie
 		return -1;
 	} else U1TXREG = c;
-        
+
 #else //#ifdef INT_UART_TX
-	
+
 	while (U1STAbits.UTXBF);
 	U1TXREG = c;
 #endif //#ifdef INT_UART_TX
-	
+
 	/*
 	static short cnt;
 	while (U1STAbits.UTXBF) cnt++;	// Si le buffer du module est plein
@@ -107,7 +107,7 @@ void __attribute__((interrupt, auto_psv)) _U1RXInterrupt(void)
 void __attribute__((interrupt, auto_psv)) _U1TXInterrupt(void)
 {
 	IFS0bits.U1TXIF = 0; // On s'acquitte de l'interruption
-	
+
 	if(U1STAbits.FERR == 1)	// Erreurs ?
 		return ;
 	// must clear the overrun error to keep uart receiving
@@ -116,7 +116,7 @@ void __attribute__((interrupt, auto_psv)) _U1TXInterrupt(void)
 		U1STAbits.OERR = 0;
 		return ;
 	}
-	
+
 	/*if (txBufferSize) {
 		U1TXREG = txBufferLength + 128;
 		txBufferSize --;

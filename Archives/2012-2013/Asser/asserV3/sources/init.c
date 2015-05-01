@@ -17,11 +17,11 @@ void init_osc() {
 	CLKDIVbits.PLLPRE = 0;		// (FRC) /2
 	PLLFBD = 41;				// (FRC/2) *43
 	CLKDIVbits.PLLPOST = 0;		// (FRC/2*43) /2
-	
+
 	__builtin_write_OSCCONH((OSCCONH | 1 )& 0xF9);	// Choix de l'horloge FRC avec PLL
 	__builtin_write_OSCCONL(OSCCONL | 1);			// Changement d'horloge
 	//while (!OSCCONbits.LOCK);						// Attend le bloquage de la PLL (debug)
-	
+
 
 
 	while (OSCCONbits.OSWEN); 						// Attend le changement
@@ -75,30 +75,30 @@ void PWM1_init () {
 
     P1TCONbits.PTEN = 1;        // Active le Timer des PWMs
     P1TCONbits.PTOPS = 5-1;	// Reset automatique aux modif de P1TCON
-	
+
 }
 
 void timer_init()
 {
-	
+
 	/********************************************/
         /*Initialisation de la période de l'asser*/
         /********************************************/
 	T1CONbits.TSIDL = 1;
 	T1CONbits.TGATE  = 0 ;
-	T1CONbits.TCKPS = 0b11;//Prescaller 256
-	
-	TMR1 = 0; //Reset du conteur  
-	
+	T1CONbits.TCKPS = 0b11;//Prescaller 64
+
+	TMR1 = 0; //Reset du conteur
+
 	//période de 20 ms
 	PR1 = 100;//250; //Réglage de la fréquence de l'horloge. (Fctimer = (40Mhz/256))
 	
 	T1CONbits.TCS = 0;
-	
+
 	IPC0bits.T1IP = 0x01; // Set Timer1 Interrupt Priority Level
         IFS0bits.T1IF = 0; // Clear Timer1 Interrupt Flag
         IEC0bits.T1IE = 1; //Enable interupt
-	
+
 	T1CONbits.TON = 1;//Début du timer
 
         /********************************************/
@@ -121,8 +121,8 @@ void timer_init()
         IFS0bits.T2IF = 0; // Clear Timer1 Interrupt Flag
         IEC0bits.T2IE = 1; //Enable interupt
 
-        
-}	
+
+}
 
 
 void QEI_init ()
@@ -155,7 +155,7 @@ void QEI_init ()
     /* Reset compteurs */
     POS1CNT = 0;
     POS2CNT = 0;
-	
+
 	/* Activation des interruptions sur débordement des compteurs */
 	IEC3bits.QEI1IE = 1;
 	IEC4bits.QEI2IE = 1;
@@ -176,7 +176,7 @@ void UART_init()
 	// Low speed : BRG = 79,23 MHz / 32 / Baudrate - 1
 	U1MODEbits.BRGH = 1;	// High speed : BRG = 79,23 MHz / 8 / Baudrate - 1
 	U1BRG = 85; 			// BAUD Rate Setting for 115200 gives 115160 bauds
-	
+
 #ifdef INT_UART_TX
 	U1STAbits.UTXISEL1 = 1;	// Interrupt on empty FIFO, last byte is being sent
 	U1STAbits.UTXISEL0 = 0;	//                      "

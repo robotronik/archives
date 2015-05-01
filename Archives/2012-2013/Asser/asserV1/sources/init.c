@@ -91,8 +91,8 @@ void timer_init()
 	TMR1 = 0; //Reset du conteur
 
 	//période de 20 ms
-	PR1 = 100;//250; //Réglage de la fréquence de l'horloge. (Fcy = (80Mhz/64)*20ms. 25 000 = 20ms
-
+	PR1 = 100;//250; //Réglage de la fréquence de l'horloge. (Fctimer = (40Mhz/256))
+	
 	T1CONbits.TCS = 0;
 
 	IPC0bits.T1IP = 0x01; // Set Timer1 Interrupt Priority Level
