@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="debug.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="402" topLine="0" />
+	</File>
+	<File name="debug.hpp" open="0" top="0" tabpos="7">
+		<Cursor position="102" topLine="0" />
+	</File>
+	<File name="deplacement_robot.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="4325" topLine="77" />
+	</File>
+	<File name="deplacement_robot.hpp" open="1" top="0" tabpos="8">
+		<Cursor position="593" topLine="12" />
+	</File>
+	<File name="elements.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="13362" topLine="122" />
+	</File>
+	<File name="elements.hpp" open="1" top="0" tabpos="9">
+		<Cursor position="56" topLine="0" />
+	</File>
+	<File name="generation_table.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="1874" topLine="0" />
+	</File>
+	<File name="generation_table.hpp" open="0" top="0" tabpos="8">
+		<Cursor position="50" topLine="0" />
+	</File>
+	<File name="liste_instruction.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="2121" topLine="0" />
+	</File>
+	<File name="liste_instruction.hpp" open="0" top="0" tabpos="9">
+		<Cursor position="327" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="2018" topLine="60" />
+	</File>
+	<File name="main.hpp" open="1" top="0" tabpos="2">
+		<Cursor position="1053" topLine="10" />
+	</File>
+	<File name="physique.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="962" topLine="26" />
+	</File>
+	<File name="physique.hpp" open="1" top="0" tabpos="6">
+		<Cursor position="273" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

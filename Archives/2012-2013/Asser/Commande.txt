@@ -1,0 +1,11 @@
+Structure :
+
+
+
+Code :
+Delta 	:	0b010
+Alpha	: 	0b101
+STOP 	:	0b000
+Config	: 	0b111
+getXY	:	0b100
+getAlpha:	0b001

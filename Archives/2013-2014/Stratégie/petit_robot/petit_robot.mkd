@@ -1,0 +1,149 @@
+# Le robot #
+    
+L'arrière est en pointe.
+
+# Machine à état #
+
+## Liste des états ##
+
+Par ordre de priorité :
+
+- stop_90s
+    * stop_sharp
+- obstacle
+    * stop_sharp
+    * arrêt 3s max
+    * contourner si toujours obstacle
+- perdu
+    * stop_sharp
+- objectif
+    * objectif_new
+    * objectif_reprise
+    * objectif_en_cour
+    * objectif_valider
+    * objectif_suivant
+
+## Objectif ##
+
+- Distance :
+    * ligne droite + rotation
+    * ne doit pas bloquer si l'asser est perdu
+- Bumper :
+    * attends qu'un bumper detecte un mur
+
+# Liste des objectifs
+
+## Type d'objectifs ##
+
+- Position (x,y)
+- bumper (true)
+
+## Stratégie ##
+
+## Stratégie générale ##
+
+- à tout moment si il y a un obstacle, passe en évitement d'obstacle
+- au bout de 90s, tu t'arrête
+- si tu es perdu, tu t'arrête
+
+- avance de 135 cm et fait tomber le feu au passage (en suivant la ligne noire)
+- tourne vers les fresques de 90 degrés
+- avance jusqu'à toucher le mur et pose les fresques (toujours en suivant la ligne noire)
+- *si l'assert à une bonne précision*
+    * tourne dans la direction de l'arbre de ton côté (quelques degrés)
+    * recule jusqu'à l'arbre
+- *sinon*
+    * recule de 65cm
+    * tourne de 90 degré vers ta base
+    * recule de 20cm
+    * tourne de 90 degré
+    * avance j'usqu'au mur
+    * recule de 10 cm
+    * tourne de 90 degré vers ta base
+- recule en récupérant les fruits jusqu'à être à 30 cm du mur
+- tourne de 45 degré vers la base
+- recule de 40cm
+- tourne de 45 degré vers la base
+- avance jusqu'à la ligne noire (60 cm du bord) en récupérant les fruits du deuxième arbre.
+- tourne à 90 degré
+- *si l'assert manque de précision*
+    * avance jusqu'au mur
+    * recule jusqu'à 90 cm du bord oposé
+- *sinon*
+    * avance jusqu'à 90 cm du bord oposé
+- tourne de 90°
+ recule jusqu'à toucher le bac
+- vide le bac
+- retourne à la base
+
+### en absolu ###
+
+Toutes les distances sont en cm
+
+Dimensions du robot :
+- le centre est situé au milieu des roues, soit à 6 cm de l'avant, et à 9,5 cm de l'arrière
+- le robot fait 17,5 cm de côté
+
+Références :
+- coin rouge = (0;0)
+- coin jaune = (300;0)
+- EST   = 300 en x
+- OUEST =   0 en x
+- NORD  =   0 en y
+- SUD   = 200 en y
+
+Robot :
+- COTE  =  8,75 cm
+- AVANT =     6 cm
+- ARRIERE = 9,5 cm
+
+Piste :
+- COIN   = 37 cm
+- ARBRE  = 27,5 cm
+- DEPART = 60 cm        en y
+- BAC    = 29,5 + AVANT en y
+
+Pour les jaunes :
+
+- départ :                     (EST  - ARRIERE ;       DEPART)
+- coin ligne noire :           (EST  -     135 ;       DEPART)
+- bumper : mur                 (EST  -     135 ; NORD + AVANT)
+- avant arbre :                (EST  -    95,5 ;  SUD - ARBRE)
+- coin avant 45°               (EST  -    COIN ;  SUD - ARBRE)
+- coin après 45°               (EST  -   ARBRE ;  SUD -  COIN)
+- retour depart                (EST  -   ARBRE ;       DEPART)
+- optionel : départ            (EST  - ARRIERE ;       DEPART)
+- devant les bacs              (OUEST +   95,5 ;       DEPART)
+- bumper : vider les fruits    (OUEST +   95,5 ;          BAC)
+
+Pour les rouges :
+
+- départ :                     (OUEST + ARRIERE ;       DEPART)
+- coin ligne noire :           (OUEST +     135 ;       DEPART)
+- bumper : mur                 (OUEST +     135 ; NORD + AVANT)
+- avant arbre :                (OUEST +    95,5 ;  SUD - ARBRE)
+- coin avant 45°               (OUEST +    COIN ;  SUD - ARBRE)
+- coin après 45°               (OUEST +   ARBRE ;  SUD -  COIN)
+- retour depart                (OUEST +   ARBRE ;       DEPART)
+- optionel : départ            (OUEST + ARRIERE ;       DEPART)
+- devant les bacs              (EST  -    95,5 ;       DEPART)
+- bumper : vider les fruits    (EST  -    95,5 ;          BAC)
+
+On peut conclure que la différence entre les jaunes et les rouges est simplement le référentiel. Si la postion voulu est (x;y), cela donnera (EST - x; y) pour les jaunes et (OUEST + x; y) pour les rouges. On peut avoir besoin de se référer à la couleur opposé à celle du départ.
+
+## évitement d'obstacle ##
+
+- l'évitement d'obstacle est déclanché quand un objet est détecté devant alors qu'il ne devrait pas y être.
+- la statégie générale reprend si l'obstacle à disparu à tout moment pendant l'évitement
+
+- stop durant 3 secondes
+- recule de 10 cm
+- tourne de 90°
+- recommence
+
+## perdu ##
+
+- si le robot bute dans un obstacle avec le bumper à un moment ou ce n'est pas normal, il est perdu
+
+- il ne bouge plus vu qu'il est certainement contre un mur
+- si jamais l'obstacle s'en va (c'était un robot adverse ou un bug) il reprend la stratégie générale.

@@ -1,0 +1,30 @@
+------------------------------ Valeurs de configuration ajustables                 ----------
+
+
+------------------------------ Valeurs concernant l'affichage                      ----------
+
+BORDURES_BLANCHES        40.0
+LARGEUR_FENETRE          900.0
+HAUTEUR_FENETRE          630.0
+// nb : resolution finale de la fenetre de [ LARGEUR_FENETRE + BORDURES_BLANCHES ; HAUTEUR_FENETRE + BORDURES_BLANCHES ]
+// nb : largeur et hauteur respectivement multiples de 300 et 210 necessaires pour obtenir un comportement stable
+
+EPAISSEUR_PIXEL 2.0
+
+
+
+------------------------------ Valeur du temps de pause entre les generations (ms) ----------
+
+DELAY 1.0
+// une valeur plus importante soulage l'ordinateur mais provoque une execution plus lente
+
+
+
+------------------------------ Valeurs par defaut concernant le robot 		   ----------
+
+VITESSE_TRANS_ROBOT_DEFAUT  0.3
+// nb : ne pas la valeur de 0.3 (pas de un pixel) sinon les calcul et l'affichage ne se font plus de façon exact
+VITESSE_ROT_ROBOT_DEFAUT    0.5
+// nb : ne pas la valeur de 1 (pas de un degre) pour les même raisons
+VITESSE_PINCE_DEFAUT        1.0
+ANGLE_PINCE_DEFAUT          135.0

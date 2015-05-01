@@ -1,0 +1,3 @@
+id x y nb_de_fils filsi
+
+filsi : si > 1000, fils en diagonal, sinon, en ligne droite 

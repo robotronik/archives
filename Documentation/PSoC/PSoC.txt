@@ -1,0 +1,4 @@
+ARM-CORTEX M3 ou 8051 -> 32 bits
+80 MHz
+'+', '-', '*', '/', opérations logiques, binaires et manipulation de bit
+no float

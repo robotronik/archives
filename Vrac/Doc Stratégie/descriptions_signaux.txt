@@ -1,0 +1,37 @@
+file_depl_go.isEmpty() : file_depl_go est la file contenant les actions pour aller
+et réaliser l'objectif. La fonction isEmpty() renvoie vrai si cette file ne contient
+aucune instruction
+
+file_depl_return.isEmpty() : idem avec les actions pour retourner à la base
+
+fin_mouvement : bit placé à un quand on a reçu un signal de la carte asser pour
+un passage par un point de passage
+
+possede_jeton : bit placé par le SPY à 1 quand on est passé par dessus au moins un
+jeton. Il est replacé à 0 par ce même SPY quand on a ouvert les pinces au dessus
+d'une zone cale et que l'on a reculé de FRONT_PINCE cm
+
+adversaire_bouge : bit placé par le SPY à 1 ou 0 quand l'adversaire a fait un mouvement
+significatif, c'est à dire, du/dt > MOUV_SIGN, dt en interne d'espion, de periode
+inferieur a l envoi de la tourelle. Se servir des capteur quand la tourelle marche
+pas
+
+mouv_repos : bit placé à 1 lorsque que un mouvement de repositionnement a été envoyé
+à l'asser
+
+blocked : le signal le plus important et le plus relou ! bit placé par
+l'interruption de la tourelle ou du capteur lorsque le robot adverse est proche de
+nous à notre distance de freinage+delta. prioritaire sur les autres transitions
+
+warn_blocked :  bit placé par l'interruption de la tourelle ou du capteur lorsque
+le robot adverse est proche de nous à notre distance de securite. blocked implique
+warn_blocked
+
+besoin_obj : bit placé à 1 quand on est dans l'IDLE de l'automate action uniquement
+
+calcul_retour : bit placé à 1 quand on est dans l'état RECALCUL_RETOUR de l'automate
+action.
+
+choix_obj : unsigned char donne par choix objectif
+
+

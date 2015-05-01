@@ -1,0 +1,41 @@
+Dépendances à vérif pour les constantes (4 kHz dupliqué)
+Saut de commande aux changements accel/décel
+
+---------------------------------------------------------------------------------------------------------------------
+	Réglage					Automatisable	Dépendant de l'alim		Dépendant des réglages	Dépendant de la vitesse
+---------------------------------------------------------------------------------------------------------------------
+Cmd min							  X					X				
+Accélération					  X					X				
+Décélération									   (X)				
+Coeff Distance freinage			  X									Décélération
+tick / distance et angle											
+---------------------------------------------------------------------------------------------------------------------
+	
+Cmd min (U = Tp_MAX * R / K)
+	Avant match : Accélération faible (inhiber l'effet bobine) + détection du démarrage => CMD_MIN_INIT			OK
+	Match : CMD_MIN = CMD_MIN_INIT * VBAT_INIT / VBAT															TODO
+
+Décélération
+	Constante manuelle approximative																			OK
+	
+Distance freinage																								TODO
+	Ne dépend pas de l'alim (décélération constante)
+	coef_frein : init nul, XYRapide, décrément jusqu'à l'arrêt
+	/!\ Si batteries surchargées au réglage : risque freinage insufisant après leurs stabilisations
+OU (à tester)
+	Constante de décélération = constante d'accélération
+	Mesure distance à l'accélération : prévoir distance plus grande pour freiner
+
+Accélération
+	Ajout dérapages sur modèle																					INGOING
+	Détection des (minis)dérapages																				TODO
+		moyenne sur 250 ms comme batterie ?
+	Match : à augmenter (gain de temps au risque de déraper)													BONUS
+	
+Modèles moteurs différents à gauche et à droite
+Modulos -> fonctions optimisées
+Verif nivBatInv pr != Vbats
+entrée en test par 1 octet max -tuto
+Dossier Asser avec raccourcis sur SVN
+Coupe 2013/PSoC/HomologationAsserXY ?
+Tuto en PDF -> vrais titres

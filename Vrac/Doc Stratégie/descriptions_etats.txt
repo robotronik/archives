@@ -1,0 +1,120 @@
+Automate mouvement 
+
+IDLE :
+	besoin_obj = 1
+
+
+DEPL_GO :
+	Envoi des données de déplacement contenus
+dans file_depl_go à l'asser.
+L'asser doit toujours avoir moins de
+NB_INSTRUCTIONS_MAX_ASSER=3 instructions mais
+tenter de remplir au maximum. On doit egalement
+repositionner les pinces en fonction de la courbe
+fin_mouvement=0
+
+
+WAIT_END_DEPL_GO :
+	Simple attente du fin_mouvement=1 par
+un message UART "point de passage" par l'asser
+	
+
+DEPL_RETURN :
+	Envoi des données de déplacement contenus
+dans file_depl_return à l'asser.
+L'asser doit toujours avoir moins de
+NB_INSTRUCTIONS_MAX_ASSER=3 instructions mais
+tenter de remplir au maximum. On doit egalement
+repositionner les pinces en fonction de la courbe
+fin_mouvement=0
+
+
+WAIT_END_DEPL_RETURN :
+	Simple attente du fin_mouvement=1 par
+un message UART "point de passage" par l'asser
+
+
+BLOCKED :
+	Il faut vider la file d'asser pour arreter
+le robot et mettre fin_mouvement=1. Le comportement
+attendu est une attente que le robot adverse ne
+bouge plus. On vide toutes les files internes aux
+deplacements dans le psoc
+
+
+DEPL_REPOS :
+	Si mouv_repos = 1, on envoie à l'asser la
+commande en mode rapide. On doit egalement
+repositionner les pinces en fonction de la courbe
+fin_mouvement=0
+	Sinon, le comportement attendu est une
+attente d'un mouv_repos ou d'une sortie de la zone
+warn_blocked(prioritaire)
+
+
+WAIT_END_DEPL_REPOS :
+	Simple attente du fin_mouvement=1 par
+un message UART "point de passage" par l'asser.
+Par contre, si l'adversaire bouge
+
+
+RECALCUL_RETURN :
+	On place calcul_retour à 1 si la file
+depl_return est vide. Sinon on le place à 0
+
+
+FIN_MATCH :
+	On regarde si on a vidé l'asser. Si c'est
+pas le cas on le fait. On s'attend à toujours rester
+dans cet état par la suite.
+
+
+
+Automate réflexion :
+
+SPY :
+	Etat de départ de tout état réflexion. C'est
+la prise d'information. On récupère les infos du 
+robot adverse, c'est à dire par exemple de dire si
+le robot adverse bouge ou non. Les fonctions doivent
+pouvoir s'adapter si la tourelle marche ou non, et 
+donc possèder des fonctions analogues avec des
+capteurs. La prise d'information concerne également
+notre robot, et de regarder par exemple si l'on
+possède un jeton. cf descr. signal:possede_jeton
+pour plus d'infos. Egalement, on replace les jetons
+là où avec les robots ils sont probables de se
+trouver.
+
+
+CLUSTER :
+	On a obtenu la liste des jetons. On les
+regroupe en clusters pour établir la zone d'action.
+
+
+
+CHOIX_OBJ :
+	On a obtenu la liste des clusters. On choisit
+le meilleur cluster en leur attribuant à chacun un
+poids. Un fois ce meilleur cluster obtenu, on fait
+une sauvegarde de celui-ci avec les positions des
+jetons pour être disponible si on a un passage à 
+REMPLIR_OBJ
+
+
+REMPLIR_OBJ :
+	On regarde ce qui est mis à disposition par
+CHOIX_OBJ et on remplit les 2 files depl_go et
+depl_return.
+
+
+CALCUL_REPOS :
+	Si on n'a pas de calcul_retour, on effectue
+un calcul de la reposition et on met à disposition
+de l'autre automate
+
+SPY2 : effectue les mêmes actions que SPY1
+
+CALCUL_RETOUR :
+	On remplit la file_depl_return.
+	besoin_obj = 0

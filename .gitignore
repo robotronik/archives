@@ -1,0 +1,81 @@
+##### Fichiers en vrac
+Thumbs.db
+*~
+*.Ink
+*.autosave
+*.o
+
+
+##### Altium
+History
+__Previews
+*.PrjPCBStructure
+*.PrjPcbStructure
+Project Outputs for *
+Project Logs for *
+
+# PCB
+# *.IntLib
+# *.LOG
+
+
+##### MPLabX
+*.d
+*.pre
+*.p1
+*.lst
+*.sym
+*.obj
+*.sdb
+*.obj.dmp
+nbproject/private/
+nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+funclist
+nbproject/Makefile-*
+disassembly/
+*.map
+
+# PIC
+*.cof
+*.mcw
+*.hex
+build/
+dist/
+
+
+##### PSOC ?
+.DS_Store
+*.cywrk.*
+*.cyprj.*
+*.cycdx
+*.cyfit
+*.rpt
+*.uvopt
+*.uvproj
+*_timing.html
+*.cydsn/codegentemp
+*.cydsn/DP8051
+*.cydsn/Generated_Source
+codegentemp/
+CortexM3/
+Generated_Source/
+TopDesign/
+
+
+##### LaTeX :
+*.aux
+*.dvi
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+
+#### Python
+*.py[cod]

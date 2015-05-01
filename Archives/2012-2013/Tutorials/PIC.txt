@@ -1,0 +1,16 @@
+Le lociel utilisé est MPLAB
+Les workspaces (*.mcw) contiennent les informations sur le composant (référence, bits de configuration (à écrire dans les sources, cf asser XY)
+Les projets ne contiennent que les sources !
+On programme en C.
+
+Sans configuration (voir bits de configuration et 1ère fonction de init.c du programme d'asser 2012) l'horloge par défaut est la FRC (7,37 MHz pour un dsPIC33F pouvant tourner à 80 MHz).
+
+Pour être utilisé, un module (UART, timer, PWM, PLL, port d'entrée sortie, gestionnaire d'interruptions, ...) doit être configuré en modifiant la RAM du PIC. (voir fonctions de init.c du programme d'asser 2012)
+
+Un PIC n'a ni d'unité de calcul sur nombres flottants (décimaux), ni de multiplieur/diviseur.
+Un dsPIC par contre a un multiplieur/diviseur. Des fonctions "__builtin_..." permettent d'obtenir un résultat long pour une multiplication de 2 shorts et un résultat short pour une division d'un long par un short.
+
+Pour les SLE :
+	Mémoire paginée
+	Accélérateur de boucles
+	Racine carré, distance Euclidienne... en assembleur

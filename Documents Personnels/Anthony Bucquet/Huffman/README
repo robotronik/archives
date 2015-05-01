@@ -1,0 +1,7 @@
+
+Les packages proposes (*.ads) le sont a titre INDICATIF.
+Vous pouvez les modifier (packages, specifications des procedures, ...)
+a volonte selon vos besoins.
+
+Le repertoire Tests contient quelques fichiers test et un script qui lance la compression d'un fichier, le decompresse, et compare le resultat avec le fichier initial.
+

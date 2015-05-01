@@ -1,0 +1,1 @@
+Génère RAYON, COEFF_ALPH_DELT, NB_SIN, TOUR (PSoC) et le tableau de myMath.c à partir de METRE et TOUR (Asser).

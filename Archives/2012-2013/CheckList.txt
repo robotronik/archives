@@ -1,0 +1,40 @@
+            	 *************************
+		 *                       *
+		 *      Check List       *
+	 	 *                       *
+		 *   Robotronik Phelma   *
+		 *                       *
+		 *************************
+
+
+Sur le stand avant le match :
+
+	Changer les batteries (prendre des chargée à bloc)
+	Nettoyer les roues
+	Mettre de l'air dans le réservoir (4 bars)
+	vérifier  qu'il y est une carte SD dans le pi (et quelle est bonne)
+	vérifier que le ballon est bien mis et l'accrocher pour ne pas qu'il gene
+	Vérifier que rien n'est cassé
+	Serrer les vis des codeurs de R.J.
+
+
+Sur la table :
+	
+	Placer le GR aux  milieu de la deuxieme case (regarde en face)
+	Placer les DEUX interrupteurs vers l'avant (Bat + Pi)
+	Choisir la couleur AVANT d'allumer 
+	Allumer le robot (tourner arret d'urgence)
+		Une ampoule doit s'allumer
+	Appuyer sur le boutons de detection des verres (actif ~2 secondes apres allumage)
+	Le robot se cale
+		Si echec recommencer
+
+	Placer RJ, le PR sur la première case et coller à la deuxième case, apres l'avoir allumé
+		pour corriger le mouvement de roues et le faire toucher la bordure
+
+
+	Attendre que le Pi est fini de booter
+	Déplacer le robot pour viser les bougies (il est free wheel)
+		Et qu'il touche le bord
+	Tirer la tirette au départ
+	

@@ -1,0 +1,3 @@
+<-
+x  |    sens trigo, 180° sur x
+ y V

@@ -1,0 +1,12 @@
+# Blender MTL File: 'plateau.blend'
+# Material Count: 1
+newmtl Noir
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.008733 0.008733 0.008733
+Ks 0.032336 0.032336 0.032336
+Ni 1.000000
+d 1.000000
+illum 2
+
+

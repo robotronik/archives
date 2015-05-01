@@ -1,0 +1,303 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AILLEURS_H	ailleurs.h	3;"	d
+ALPHA_GET	uart.h	13;"	d
+ANGLE_MAX	mouvement.h	32;"	d
+ARBRE	main.h	/^    ARBRE   = 275,$/;"	e	enum:__anon2
+ARRIERE	main.h	/^    ARRIERE = 95,$/;"	e	enum:__anon2
+AVANCER	main.h	/^    AVANCER = MARCHE_AVANT,     \/\/\/< côté plat en avant$/;"	e	enum:__anon5
+AVANT	main.h	/^    AVANT   = 60,$/;"	e	enum:__anon2
+Action	main.h	/^}Action;$/;"	t	typeref:struct:__anon9
+Angle	main.h	/^typedef float Angle;            \/\/\/< Angle en degré$/;"	t
+BAC	main.h	/^    BAC     = 295 + AVANT,$/;"	e	enum:__anon2
+BITSCONFIGURATION_H	bitsConfiguration.h	9;"	d
+BOUGER	main.h	/^    BOUGER,                     \/\/\/< sens pour avancer indiférent$/;"	e	enum:__anon5
+BUMPER_DROITE	mapping.h	3;"	d
+BUMPER_DROITE	mapping.h	4;"	d
+CALLER	main.h	/^    CALLER,                     \/\/\/< pour caller le robot contre un mur et mettre à jour ses coordonées$/;"	e	enum:__anon5
+CCADMIN	Makefile	/^CCADMIN=CCadmin$/;"	m
+CODE_ALPHA	comAsser.h	17;"	d
+CODE_ALPHA_ABS	comAsser.h	18;"	d
+CODE_COULEUR	comXbee.h	15;"	d
+CODE_DEBUG	debug.h	/^typedef enum CODE_DEBUG {$/;"	g
+CODE_DEBUG	debug.h	/^} CODE_DEBUG;$/;"	t	typeref:enum:CODE_DEBUG
+CODE_DELTA	comAsser.h	16;"	d
+CODE_DERAPAGE	comAsser.h	27;"	d
+CODE_FIN	comXbee.h	16;"	d
+CODE_GET_ALPHA	comAsser.h	21;"	d
+CODE_GET_XY	comAsser.h	20;"	d
+CODE_PRES_GROS	comAsser.h	24;"	d
+CODE_PRES_PRECIS	comAsser.h	25;"	d
+CODE_SET_ALPHA	comAsser.h	23;"	d
+CODE_SET_XY	comAsser.h	22;"	d
+CODE_STOP	comAsser.h	19;"	d
+CODE_TIRETTE	comXbee.h	13;"	d
+CODE_XBEE_GET_XY	comXbee.h	17;"	d
+CODE_XY	comXbee.h	14;"	d
+COIN	main.h	/^    COIN    = 370,$/;"	e	enum:__anon2
+COIN_JAUNE	main.h	/^    COIN_JAUNE = EST,$/;"	e	enum:__anon2
+COIN_ROUGE	main.h	/^    COIN_ROUGE = OUEST,$/;"	e	enum:__anon2
+COMASSER_H	comAsser.h	6;"	d
+COMXBEE_H	comXbee.h	9;"	d
+COORDONEES_H	coordonees.h	2;"	d
+COORDONNEES_2014_mm	main.h	/^} COORDONNEES_2014_mm;$/;"	t	typeref:enum:__anon2
+COTE	main.h	/^    COTE    = 88,$/;"	e	enum:__anon2
+COULEUR_DEPART	main.h	/^    COULEUR_DEPART,$/;"	e	enum:__anon3
+COULEUR_OPPOSE	main.h	/^    COULEUR_OPPOSE$/;"	e	enum:__anon3
+CP	Makefile	/^CP=cp$/;"	m
+Coordonne_mm	main.h	/^typedef int Coordonne_mm;       \/\/\/< Coordonnées en mm$/;"	t
+Couleur	main.h	/^} Couleur;$/;"	t	typeref:enum:__anon3
+DEBUG_0	debug.h	/^    DEBUG_0 = 0                    ,$/;"	e	enum:CODE_DEBUG
+DEBUG_1	debug.h	/^    DEBUG_1 = LED_1                ,$/;"	e	enum:CODE_DEBUG
+DEBUG_2	debug.h	/^    DEBUG_2 =         LED_2        ,$/;"	e	enum:CODE_DEBUG
+DEBUG_3	debug.h	/^    DEBUG_3 = LED_1 | LED_2        ,$/;"	e	enum:CODE_DEBUG
+DEBUG_4	debug.h	/^    DEBUG_4 =                 LED_3,$/;"	e	enum:CODE_DEBUG
+DEBUG_5	debug.h	/^    DEBUG_5 = LED_1         | LED_3,$/;"	e	enum:CODE_DEBUG
+DEBUG_6	debug.h	/^    DEBUG_6 =         LED_2 | LED_3,$/;"	e	enum:CODE_DEBUG
+DEBUG_7	debug.h	/^    DEBUG_7 = LED_1 | LED_2 | LED_3,$/;"	e	enum:CODE_DEBUG
+DEBUG_H	debug.h	6;"	d
+DEBUG_PRINTF	comAsser.h	8;"	d
+DEPART	main.h	/^    DEPART  = 600,$/;"	e	enum:__anon2
+DISTANCE_ARRET_URGENCE	sharp.h	12;"	d
+DISTANCE_CALLAGE	main.h	/^    DISTANCE_CALLAGE   = 00000000000000000000000000000000000000000000000,$/;"	e	enum:__anon2
+DISTANCE_EVITEMENT	main.h	/^    DISTANCE_EVITEMENT = 00000000000000000000000000000000000000000000000,$/;"	e	enum:__anon2
+DISTANCE_PROXIMITE	sharp.h	11;"	d
+DONE	uart.h	12;"	d
+DONE_ASSER	comAsser.h	29;"	d
+Distance_mm	main.h	/^typedef int Distance_mm;        \/\/\/< Distance en mm$/;"	t
+EST	main.h	/^    EST     = 3000,$/;"	e	enum:__anon2
+FBS	bitsConfiguration.h	/^ int FBS __attribute__((space(prog), address(0xF80000))) = 0xCF ;$/;"	v
+FGS	bitsConfiguration.h	/^ int FGS __attribute__((space(prog), address(0xF80004))) = 0x7 ;$/;"	v
+FICD	bitsConfiguration.h	/^ int FICD __attribute__((space(prog), address(0xF8000E))) = 0xFFDF ;$/;"	v
+FOSC	bitsConfiguration.h	/^ int FOSC __attribute__((space(prog), address(0xF80008))) = 0xE7 ;$/;"	v
+FOSCSEL	bitsConfiguration.h	/^ int FOSCSEL __attribute__((space(prog), address(0xF80006))) = 0x81 ;$/;"	v
+FPOR	bitsConfiguration.h	/^ int FPOR __attribute__((space(prog), address(0xF8000C))) = 0xF7 ;$/;"	v
+FSS	bitsConfiguration.h	/^ int FSS __attribute__((space(prog), address(0xF80002))) = 0xCF ;$/;"	v
+FWDTEN_OFF	bitsConfiguration.h	/^    FWDTEN_OFF           \/\/ Watchdog Timer Enable (Watchdog timer enabled\/disabled by user software)$/;"	v
+INIT_H	init.h	11;"	d
+INT_UART_TX	main.h	118;"	d
+InfoMvt	main.h	/^} InfoMvt;$/;"	t	typeref:struct:__anon8
+JAUNE	main.h	/^    JAUNE,$/;"	e	enum:__anon3
+LARGEUR	main.h	119;"	d
+LED_1	debug.h	/^    LED_1 = 1,$/;"	e	enum:CODE_DEBUG
+LED_2	debug.h	/^    LED_2 = 2,$/;"	e	enum:CODE_DEBUG
+LED_3	debug.h	/^    LED_3 = 4,$/;"	e	enum:CODE_DEBUG
+LED_DEBUG_1	mapping.h	5;"	d
+LED_DEBUG_2	mapping.h	6;"	d
+LED_DEBUG_3	mapping.h	7;"	d
+LENT	main.h	/^    LENT$/;"	e	enum:__anon6
+MAIN_H	main.h	2;"	d
+MARCHE_ARRIERE	main.h	/^    MARCHE_ARRIERE = 1$/;"	e	enum:__anon4
+MARCHE_AVANT	main.h	/^    MARCHE_AVANT = 0,$/;"	e	enum:__anon4
+MKDIR	Makefile	/^MKDIR=mkdir$/;"	m
+MOUVEMENT_H	mouvement.h	2;"	d
+NORD	main.h	/^    NORD    = 0,$/;"	e	enum:__anon2
+NUM_CHS2SCAN	sharp.c	9;"	d	file:
+OUEST	main.h	/^    OUEST   = 0,$/;"	e	enum:__anon2
+Objectif	main.h	/^} Objectif;$/;"	t	typeref:struct:__anon7
+PI	main.h	18;"	d
+Pos	main.h	/^struct Pos {$/;"	s
+Pos	main.h	/^typedef struct Pos Pos;$/;"	t	typeref:struct:Pos
+RANLIB	Makefile	/^RANLIB=ranlib$/;"	m
+RAPIDE	main.h	/^    RAPIDE,$/;"	e	enum:__anon6
+RECULER	main.h	/^    RECULER = MARCHE_ARRIERE,   \/\/\/< pointe en avant$/;"	e	enum:__anon5
+ROTATION_ANTI_HORAIRE	main.h	/^    ROTATION_ANTI_HORAIRE$/;"	e	enum:__anon5
+ROTATION_HORAIRE	main.h	/^    ROTATION_HORAIRE,$/;"	e	enum:__anon5
+ROUGE	main.h	/^    ROUGE,$/;"	e	enum:__anon3
+RX_ASSER	mapping.h	9;"	d
+RX_XBEE	mapping.h	10;"	d
+SAMP_BUFF_SIZE	sharp.c	8;"	d	file:
+SERVO1	mapping.h	12;"	d
+SERVO2	mapping.h	13;"	d
+SERVO3	mapping.h	14;"	d
+SERVO4	mapping.h	15;"	d
+SHARP1	mapping.h	1;"	d
+SHARP2	mapping.h	2;"	d
+SHARP_1	sharp.h	/^    SHARP_1 = MARCHE_AVANT,$/;"	e	enum:__anon14
+SHARP_2	sharp.h	/^    SHARP_2 = MARCHE_ARRIERE$/;"	e	enum:__anon14
+SHARP_H	sharp.h	2;"	d
+SORTIR_ZONE_DEPART	main.h	/^    SORTIR_ZONE_DEPART = 00000000000000000000000000000000000000000000000$/;"	e	enum:__anon2
+STRATEGIE_H	strategie.h	2;"	d
+SUD	main.h	/^    SUD     = 2000,$/;"	e	enum:__anon2
+SensMvt	main.h	/^} SensMvt;$/;"	t	typeref:enum:__anon4
+Sharp	sharp.h	/^} Sharp;$/;"	t	typeref:enum:__anon14
+TX_ASSER	mapping.h	8;"	d
+TX_BUFFER_SIZE	uart.h	15;"	d
+TX_BUFFER_SIZE	uart_xbee.c	16;"	d	file:
+TX_XBEE	mapping.h	11;"	d
+T_dividedLong	main.h	/^} T_dividedLong;$/;"	t	typeref:union:__anon10
+T_dividedULong	main.h	/^} T_dividedULong;$/;"	t	typeref:union:__anon12
+Tr4Char	comAsser.h	/^struct Tr4Char$/;"	s
+Tr4Char	comAsser.h	/^typedef struct Tr4Char Tr4Char;$/;"	t	typeref:struct:Tr4Char
+TrAlpha	comAsser.h	/^struct TrAlpha$/;"	s
+TrAlpha	comAsser.h	/^typedef struct TrAlpha TrAlpha;$/;"	t	typeref:struct:TrAlpha
+TrCouleur	comXbee.h	/^struct TrCouleur$/;"	s
+TrCouleur	comXbee.h	/^typedef struct TrCouleur TrCouleur;$/;"	t	typeref:struct:TrCouleur
+TrDefault	comXbee.h	/^struct TrDefault$/;"	s
+TrDefault	comXbee.h	/^typedef struct TrDefault TrDefault;$/;"	t	typeref:struct:TrDefault
+TrDelta	comAsser.h	/^struct TrDelta$/;"	s
+TrDelta	comAsser.h	/^typedef struct TrDelta TrDelta;$/;"	t	typeref:struct:TrDelta
+TrGenShort	comAsser.h	/^struct TrGenShort$/;"	s
+TrGenShort	comAsser.h	/^typedef struct TrGenShort TrGenShort;$/;"	t	typeref:struct:TrGenShort
+TrPos	comAsser.h	/^struct TrPos$/;"	s
+TrPos	comAsser.h	/^typedef struct TrPos TrPos;$/;"	t	typeref:struct:TrPos
+TrShort	comAsser.h	/^struct TrShort$/;"	s
+TrShort	comAsser.h	/^typedef struct TrShort TrShort;$/;"	t	typeref:struct:TrShort
+TrXbee	comXbee.h	/^typedef union TrXbee TrXbee;$/;"	t	typeref:union:TrXbee
+TrXbee	comXbee.h	/^union TrXbee$/;"	u
+Trame32	comAsser.h	/^typedef union Trame32 Trame32;$/;"	t	typeref:union:Trame32
+Trame32	comAsser.h	/^union Trame32$/;"	u
+TrameAsser	comAsser.h	/^typedef union TrameAsser TrameAsser;$/;"	t	typeref:union:TrameAsser
+TrameAsser	comAsser.h	/^union TrameAsser$/;"	u
+TypeMvt	main.h	/^} TypeMvt;$/;"	t	typeref:enum:__anon5
+TypeVitesse	main.h	/^    TypeVitesse TypeVitesse;    \/\/\/< Vittesse de déplacement$/;"	m	struct:__anon7
+TypeVitesse	main.h	/^} TypeVitesse;$/;"	t	typeref:enum:__anon6
+UART_H	uart.h	8;"	d
+UART_XBEE_H	uart_xbee.h	9;"	d
+UART_init_asser	init.c	/^void UART_init_asser()$/;"	f
+UART_init_xbee	init.c	/^void UART_init_xbee()$/;"	f
+UART_putc	uart.c	/^int UART_putc(unsigned char c)$/;"	f
+UART_xbee_putc	uart_xbee.c	/^int UART_xbee_putc(unsigned char c)$/;"	f
+Xo	comAsser.h	/^		Xo:8; \/\/poids fort$/;"	m	struct:TrShort
+Xooo	comAsser.h	/^		Xooo:8; \/\/poids fort$/;"	m	struct:Tr4Char
+_ADC1Interrupt	sharp.c	/^void __attribute__((interrupt, no_auto_psv)) _ADC1Interrupt(void)$/;"	f
+_T1Interrupt	init.c	/^void __attribute__((interrupt, no_auto_psv)) _T1Interrupt(void)$/;"	f
+_T5Interrupt	init.c	/^void __attribute__((interrupt, no_auto_psv)) _T5Interrupt(void)$/;"	f
+_U1RXInterrupt	uart.c	/^void __attribute__((interrupt, auto_psv)) _U1RXInterrupt(void)$/;"	f
+_U1TXInterrupt	uart.c	/^void __attribute__((interrupt, auto_psv)) _U1TXInterrupt(void)$/;"	f
+_U2RXInterrupt	uart_xbee.c	/^void __attribute__((interrupt, auto_psv)) _U2RXInterrupt(void)$/;"	f
+_U2TXInterrupt	uart_xbee.c	/^void __attribute__((interrupt, auto_psv)) _U2TXInterrupt(void)$/;"	f
+affiche_debug	debug.c	/^void affiche_debug(CODE_DEBUG code)$/;"	f
+ain1Buff	sharp.c	/^static int  ain1Buff[SAMP_BUFF_SIZE]; \/\/\/<contient les valeurs utilisé par le sharp1$/;"	v	file:
+ain2Buff	sharp.c	/^static int  ain2Buff[SAMP_BUFF_SIZE]; \/\/\/<contient les valeurs utilisé par le sharp2 --> à faire$/;"	v	file:
+all	main.h	/^    long all;$/;"	m	union:__anon10
+all	main.h	/^    unsigned long all;$/;"	m	union:__anon12
+allumer_del	debug.c	/^void allumer_del(void)$/;"	f
+alpha	comAsser.h	/^		alpha:9, \/\/poids faible$/;"	m	struct:TrAlpha
+alpha	main.h	/^    int alpha;$/;"	m	struct:Pos
+assertAtteint	ailleurs.c	/^bool assertAtteint()$/;"	f
+avancer	mouvement.c	/^void avancer(Coordonne_mm x, Coordonne_mm y)$/;"	f
+bool	main.h	/^typedef enum {false, true} bool;$/;"	t	typeref:enum:__anon1
+bouger	mouvement.c	/^void bouger(Coordonne_mm x, Coordonne_mm y)$/;"	f
+c	comXbee.h	/^    char c;$/;"	m	union:TrXbee
+cOppose	coordonees.c	/^Couleur cOppose (Couleur c)$/;"	f
+calculX	coordonees.c	/^Coordonne_mm calculX(Couleur c, Coordonne_mm origine, Coordonne_mm relativeX)$/;"	f
+caller	mouvement.c	/^void caller(Coordonne_mm postCallageX, Coordonne_mm postCallageY)$/;"	f
+chercheObjectif	strategie.c	/^void chercheObjectif(Objectif obj[], int nbObj, Couleur couleur)$/;"	f
+codet	comAsser.h	/^		codet:3; \/\/poids fort$/;"	m	struct:TrDelta
+codet	comAsser.h	/^		codet:4; \/\/poids fort$/;"	m	struct:TrAlpha
+codet	comAsser.h	/^		codet:4; \/\/poids fort$/;"	m	struct:TrGenShort
+codet	comAsser.h	/^		codet:4;$/;"	m	struct:TrPos
+codet	comXbee.h	/^    codet : 4;$/;"	m	struct:TrCouleur
+codet	comXbee.h	/^    codet : 4;$/;"	m	struct:TrDefault
+colision	ailleurs.c	/^bool colision()$/;"	f
+couleur	comXbee.h	/^    TrCouleur couleur;$/;"	m	union:TrXbee
+couleur	comXbee.h	/^    couleur : 1,$/;"	m	struct:TrCouleur
+couleur	main_petit_robot.c	/^Couleur couleur;$/;"	v
+d	comXbee.h	/^    TrDefault d;$/;"	m	union:TrXbee
+delta	comAsser.h	/^		delta:12, \/\/poids faible$/;"	m	struct:TrDelta
+distance	main_petit_robot.c	/^volatile int distance;$/;"	v
+doneAsser	main_petit_robot.c	/^volatile int doneAsser     = 1;$/;"	v
+enEvitement	main.h	/^    bool    enEvitement;$/;"	m	struct:__anon8
+eteindre_del	debug.c	/^void eteindre_del(void)$/;"	f
+evitementObstacle	strategie.c	/^void evitementObstacle(InfoMvt *infoMvt)$/;"	f
+false	main.h	/^typedef enum {false, true} bool;$/;"	e	enum:__anon1
+fin	main_petit_robot.c	/^volatile char fin = 0;$/;"	v
+forceIgnoreSharp	main_petit_robot.c	/^volatile char forceIgnoreSharp=1;\/\/au début, premier cadeau$/;"	v
+getAlpha	comAsser.c	/^void getAlpha(void)$/;"	f
+getAlphaAbs	ailleurs.c	/^Angle getAlphaAbs()$/;"	f
+getDistance	sharp.c	/^int getDistance(Sharp sharp)$/;"	f
+getPosX	ailleurs.c	/^Coordonne_mm getPosX()$/;"	f
+getPosY	ailleurs.c	/^Coordonne_mm getPosY()$/;"	f
+getXY	comAsser.c	/^void getXY(void)$/;"	f
+high	main.h	/^        short high;$/;"	m	struct:__anon10::__anon11
+high	main.h	/^        unsigned short high;$/;"	m	struct:__anon12::__anon13
+ignoreSharp	main_petit_robot.c	/^volatile char ignoreSharp;$/;"	v
+indexTx2Buffer	main_petit_robot.c	/^volatile short indexTx2Buffer;$/;"	v
+indexTxBuffer	main_petit_robot.c	/^volatile short indexTxBuffer;$/;"	v
+init	init.c	/^void init()$/;"	f
+initSharp	sharp.c	/^void initSharp(void)$/;"	f
+initTimerEvite	init.c	/^void initTimerEvite()$/;"	f
+initTimerSharp	sharp.c	/^void initTimerSharp()$/;"	f
+init_osc	init.c	/^void init_osc() {$/;"	f
+io_init	init.c	/^void io_init(void)$/;"	f
+l	comAsser.h	/^	unsigned long l;$/;"	m	union:Trame32
+low	main.h	/^        short low;$/;"	m	struct:__anon10::__anon11
+low	main.h	/^        short low;$/;"	m	struct:__anon12::__anon13
+main	main_petit_robot.c	/^int main(int argc, char const *argv[])$/;"	f
+message_processing	comAsser.c	/^void message_processing(unsigned char inMessage)$/;"	f
+message_processing_xbee	comXbee.c	/^void message_processing_xbee(unsigned char inMessage)$/;"	f
+moveFront	mouvement.c	/^ void moveFront()$/;"	f
+mvt	main.h	/^    void (*mvt) (Coordonne_mm x, Coordonne_mm y);            \/\/\/< Fonction de mouvement à appliquer (ex : avancer, reculer, bouger, caller, ...)$/;"	m	struct:__anon7
+nextX	main.h	/^    Coordonne_mm nextX;         \/\/\/< Coordonnées du point à atteindre par rapport à la couleur de référence$/;"	m	struct:__anon7
+nextY	main.h	/^    Coordonne_mm nextY;$/;"	m	struct:__anon7
+oX	comAsser.h	/^		oX:8, \/\/poids faible$/;"	m	struct:TrShort
+oXoo	comAsser.h	/^		oXoo:8,$/;"	m	struct:Tr4Char
+ooXo	comAsser.h	/^		ooXo:8,$/;"	m	struct:Tr4Char
+oooX	comAsser.h	/^		oooX:8, \/\/poids faible$/;"	m	struct:Tr4Char
+parcourt	strategie.c	/^void parcourt(Objectif objPetitRobot[], int nbObj, Couleur couleur, InfoMvt *infoMvt)$/;"	f
+part	main.h	/^    } part;$/;"	m	union:__anon10	typeref:struct:__anon10::__anon11
+part	main.h	/^    } part;$/;"	m	union:__anon12	typeref:struct:__anon12::__anon13
+pause_ms	debug.c	/^void pause_ms(unsigned short n)$/;"	f
+pause_s	debug.c	/^void pause_s(unsigned short n)$/;"	f
+reculer	mouvement.c	/^void reculer(Coordonne_mm x, Coordonne_mm y)$/;"	f
+requestGetAlpha	main_petit_robot.c	/^volatile int requestGetAlpha = 0;$/;"	v
+requestGetXY	main_petit_robot.c	/^volatile int requestGetXY    = 0;$/;"	v
+robot1	main_petit_robot.c	/^volatile Pos robot1;$/;"	v
+robotNous	main_petit_robot.c	/^volatile Pos robotNous;$/;"	v
+s_distance	sharp.c	/^static int s_distance;$/;"	v	file:
+sampleCounter	sharp.c	/^static int  sampleCounter=0;$/;"	v	file:
+scanCounter	sharp.c	/^static int  scanCounter=0;$/;"	v	file:
+sendAlpha	comAsser.c	/^void sendAlpha(short alpha)$/;"	f
+sendAlphaAbs	comAsser.c	/^void sendAlphaAbs(short alpha)$/;"	f
+sendAsser	uart.h	22;"	d
+sendAsser32	uart.h	23;"	d
+sendDelta	comAsser.c	/^void sendDelta(short delta)$/;"	f
+sendPresGros	comAsser.c	/^void sendPresGros(void)$/;"	f
+sendPresPrecis	comAsser.c	/^void sendPresPrecis(void)$/;"	f
+sendSetAlpha	comAsser.c	/^void sendSetAlpha(short alpha)$/;"	f
+sendSetXY	comAsser.c	/^void sendSetXY(int x, int y)$/;"	f
+sendStop	comAsser.c	/^void sendStop(void)$/;"	f
+sendXY	comXbee.c	/^void sendXY()$/;"	f
+send_long	uart.c	/^int send_long(long message) {$/;"	f
+send_short	uart.c	/^int send_short(short message) {$/;"	f
+send_xbee_long	uart_xbee.c	/^int send_xbee_long(long message) {$/;"	f
+send_xbee_short	uart_xbee.c	/^int send_xbee_short(short message) {$/;"	f
+sensMvt	main.h	/^    SensMvt sensMvt;$/;"	m	struct:__anon8
+set_ready	ailleurs.c	/^void set_ready()$/;"	f
+signe	comAsser.h	/^		signe:1, \/\/ 1 négatif, 0 positif$/;"	m	struct:TrDelta
+signe	comAsser.h	/^		signe:1,$/;"	m	struct:TrAlpha
+stopSharp	main_petit_robot.c	/^volatile int stopSharp       = 0;$/;"	v
+stub	comAsser.h	/^		stub:12,$/;"	m	struct:TrGenShort
+stub	comAsser.h	/^		stub:2,$/;"	m	struct:TrAlpha
+stub	comAsser.h	/^		stub:4,$/;"	m	struct:TrPos
+stub	comXbee.h	/^    stub : 3,$/;"	m	struct:TrCouleur
+stub	comXbee.h	/^    stub : 4,$/;"	m	struct:TrDefault
+timeEnd	ailleurs.c	/^bool timeEnd()$/;"	f
+timer_init	init.c	/^void timer_init()$/;"	f
+tirette	main_petit_robot.c	/^volatile char tirette = 0;$/;"	v
+tpos	comAsser.h	/^	TrPos tpos;$/;"	m	union:Trame32
+tr4Char	comAsser.h	/^	Tr4Char tr4Char;$/;"	m	union:Trame32
+trAlpha	comAsser.h	/^	TrAlpha trAlpha;$/;"	m	union:TrameAsser
+trDelta	comAsser.h	/^	TrDelta trDelta;$/;"	m	union:TrameAsser
+trGenShort	comAsser.h	/^	TrGenShort trGenShort;$/;"	m	union:TrameAsser
+trShort	comAsser.h	/^	TrShort trShort;$/;"	m	union:TrameAsser
+true	main.h	/^typedef enum {false, true} bool;$/;"	e	enum:__anon1
+tx2Buffer	main_petit_robot.c	/^volatile unsigned char tx2Buffer[TX_BUFFER_SIZE];$/;"	v
+tx2BufferLength	main_petit_robot.c	/^volatile short tx2BufferLength;$/;"	v
+txBuffer	main_petit_robot.c	/^volatile unsigned char txBuffer[TX_BUFFER_SIZE];$/;"	v
+txBufferLength	main_petit_robot.c	/^volatile short txBufferLength;$/;"	v
+type	main.h	/^int type; \/\/0=alpha, 1=delta$/;"	m	struct:__anon9
+typeMvt	main.h	/^    TypeMvt typeMvt;            \/\/\/< Type de mouvement (avancer, reculer, ou quelconque)$/;"	m	struct:__anon7
+us	comAsser.h	/^	unsigned short us;$/;"	m	union:TrameAsser
+valeur	main.h	/^double valeur;$/;"	m	struct:__anon9
+waitDoneAsser	comAsser.c	/^void waitDoneAsser(void)$/;"	f
+wait_match_start	ailleurs.c	/^void wait_match_start()$/;"	f
+x	comAsser.h	/^		x:12,$/;"	m	struct:TrPos
+x	main.h	/^    int x;$/;"	m	struct:Pos
+y	comAsser.h	/^		y:12,$/;"	m	struct:TrPos
+y	main.h	/^    int y;$/;"	m	struct:Pos

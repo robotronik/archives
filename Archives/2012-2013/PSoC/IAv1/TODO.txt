@@ -1,0 +1,30 @@
+-callage /blocage -- callage OK
+- eviter le gateau lors des depl
+- astar ? -- OK a test
+- callage départ avant tireete  --OK
+- calculer les points
+- Rouge/bleu            --~OK
+- reprise uniq sur depl --OK
+- pile de 4
+-Merger bougies haut et bas pour le gateau --OK a test
+-Evitement mieux (astar ?) --OK a test
+- int couleur => Couleur couleur --OK
+-stopSharp (obstacleMAE) que quand delta --OK à validé en test
+- ne pas detecter les piles ? --OK
+-RAZ stopSharp quand pas dleta --OK a test
+-timer pour sortir d'un blocage
+-changer indice procInt --OK a test
+-faire un deuxieme parcours de verre pour depart vue bougies --OK
+- Depart machine tirette et second robot (couleur)
+- Data astar amélioré avec deux tableau ... flash et ram ... --OK
+- misison BOUGIES_FACILES --OK
+- remplir le README ~OK
+- mission RATISSAGE --OK a test
+- Gererr le temps avec des var 75% 50% 80% ...
+- fail safe des verres  --OK
+- Bumper pour tous les calleges --OK
+- timer safe pour request get -- en cours
+- les bras gauches bougent, ils faut les replier ...
+
+
+-voir si pas pos init au calcul d'un astar -- il semblerai que ce soit bon

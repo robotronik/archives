@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Simu" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\Simu" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="newton_d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\Simu" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="newton" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+		</Linker>
+		<Unit filename="CmptEngine.cpp" />
+		<Unit filename="CmptEngine.h" />
+		<Unit filename="Data.cpp" />
+		<Unit filename="Data.h" />
+		<Unit filename="GameEngine.cpp" />
+		<Unit filename="GameEngine.h" />
+		<Unit filename="GraphicEngine.cpp" />
+		<Unit filename="GraphicEngine.h" />
+		<Unit filename="IEngine.h" />
+		<Unit filename="IObject.cpp" />
+		<Unit filename="IObject.h" />
+		<Unit filename="Jeton.cpp" />
+		<Unit filename="Jeton.h" />
+		<Unit filename="JoysEngine.cpp" />
+		<Unit filename="JoysEngine.h" />
+		<Unit filename="PhysicEngine.cpp" />
+		<Unit filename="PhysicEngine.h" />
+		<Unit filename="Plateau.cpp" />
+		<Unit filename="Plateau.h" />
+		<Unit filename="Robot.cpp" />
+		<Unit filename="Robot.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="messages.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,10 @@
+Violet-Rouge, inversion bonne
+chemin totem
+chemin cale adverse
+chemin bouteille
+chemin losange
+chemin autres
+
+blockage/systeme d'evitement
+
+little endian Psoc

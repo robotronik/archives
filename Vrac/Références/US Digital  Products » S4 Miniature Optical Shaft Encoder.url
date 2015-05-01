@@ -1,0 +1,9 @@
+[DEFAULT]
+BASEURL=http://www.usdigital.com/products/encoders/incremental/rotary/shaft/s4
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://www.usdigital.com/products/encoders/incremental/rotary/shaft/s4
+IDList=
+IconFile=http://www.usdigital.com/graphics/favicon.ico
+IconIndex=1

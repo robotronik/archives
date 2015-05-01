@@ -1,0 +1,14 @@
+Connexion actionneurs
+Connexion asser
+COnnexion carto
+Connexion tourelle accel
+Connexion tourelle US
+
+
+------------------------
+Retour XBee pour les tests faits par le Psoc
+E0  :  Asser connectee (E comme Enable)
+E1  :  Carto connectee
+
+D0  :  Erreur Asser    (D comme Disable)
+D1  :  Erreur carto

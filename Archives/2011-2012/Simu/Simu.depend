@@ -1,0 +1,93 @@
+# depslib dependency file v1.0
+1325116169 source:d:\data\programmation\svn_robotronik\coupe 2012\simu\main.cpp
+	"GameEngine.h"
+
+1324944281 source:d:\data\programmation\svn_robotronik\coupe 2012\simu\gameengine.cpp
+	"GameEngine.h"
+
+1324918792 d:\data\programmation\svn_robotronik\coupe 2012\simu\gameengine.h
+	"GraphicEngine.h"
+	"JoysEngine.h"
+	"PhysicEngine.h"
+	"CmptEngine.h"
+
+1325256634 d:\data\programmation\svn_robotronik\coupe 2012\simu\iengine.h
+	"Data.h"
+	"messages.h"
+	<queue>
+
+1325438143 source:d:\data\programmation\svn_robotronik\coupe 2012\simu\graphicengine.cpp
+	"GraphicEngine.h"
+
+1325438036 d:\data\programmation\svn_robotronik\coupe 2012\simu\graphicengine.h
+	"IEngine.h"
+	<irr/irrlicht.h>
+
+1324859651 source:d:\data\programmation\svn_robotronik\coupe 2012\simu\ordonnanceur.cpp
+	"Ordonnanceur.h"
+
+1324850818 d:\data\programmation\svn_robotronik\coupe 2012\simu\ordonnanceur.h
+	"GraphicEngine.h"
+	"GameEngine.h"
+	"PhysicEngine.h"
+	"CmptEngine.h"
+
+1325437665 d:\data\programmation\svn_robotronik\coupe 2012\simu\data.h
+	"Plateau.h"
+	"Jeton.h"
+	"Robot.h"
+
+1325117581 source:d:\data\programmation\svn_robotronik\coupe 2012\simu\data.cpp
+	"Data.h"
+
+1324922779 d:\data\programmation\svn_robotronik\coupe 2012\simu\physicengine.h
+	"IEngine.h"
+	<Newton/Newton.h>
+
+1324923040 d:\data\programmation\svn_robotronik\coupe 2012\simu\cmptengine.h
+	"IEngine.h"
+
+1324940550 source:d:\data\programmation\svn_robotronik\coupe 2012\simu\physicengine.cpp
+	"PhysicEngine.h"
+
+1324941010 source:d:\data\programmation\svn_robotronik\coupe 2012\simu\cmptengine.cpp
+	"CmptEngine.h"
+
+1325437422 source:d:\data\programmation\svn_robotronik\coupe 2012\simu\iobject.cpp
+	"IObject.h"
+
+1325434102 d:\data\programmation\svn_robotronik\coupe 2012\simu\iobject.h
+	<Newton/Newton.h>
+	<irr/irrlicht.h>
+
+1324860314 d:\data\programmation\svn_robotronik\coupe 2012\simu\plateau.h
+	"IObject.h"
+	<cstdio>
+	<irr/irrlicht.h>
+
+1325253711 source:d:\data\programmation\svn_robotronik\coupe 2012\simu\plateau.cpp
+	"Plateau.h"
+
+1325437759 d:\data\programmation\svn_robotronik\coupe 2012\simu\jeton.h
+	<vector>
+	<fstream>
+	"IObject.h"
+
+1325253045 source:d:\data\programmation\svn_robotronik\coupe 2012\simu\jeton.cpp
+	"Jeton.h"
+
+1325438821 d:\data\programmation\svn_robotronik\coupe 2012\simu\joysengine.h
+	"IEngine.h"
+	<irr/irrlicht.h>
+
+1325430217 source:d:\data\programmation\svn_robotronik\coupe 2012\simu\joysengine.cpp
+	"JoysEngine.h"
+
+1324922624 d:\data\programmation\svn_robotronik\coupe 2012\simu\messages.h
+
+1325252571 d:\data\programmation\svn_robotronik\coupe 2012\simu\robot.h
+	"IObject.h"
+
+1325434153 source:d:\data\programmation\svn_robotronik\coupe 2012\simu\robot.cpp
+	"Robot.h"
+

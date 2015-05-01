@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Simu" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="..\bin\Debug\Simu" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\bin\Debug" />
+				<Option object_output="..\obj\Debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="newton_d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="..\bin\Release\Simu" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\bin\Release" />
+				<Option object_output="..\obj\Release" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="newton" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+		</Linker>
+		<Unit filename="Asser\asser.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Asser\asser.h" />
+		<Unit filename="Asser\conversion.h" />
+		<Unit filename="Asser\debug.h" />
+		<Unit filename="Asser\init.h" />
+		<Unit filename="Asser\main.h" />
+		<Unit filename="Asser\message.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Asser\message.h" />
+		<Unit filename="Asser\motors.h" />
+		<Unit filename="Asser\myMath.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Asser\myMath.h" />
+		<Unit filename="Asser\prog2.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Asser\prog2.h" />
+		<Unit filename="Asser\redef.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Asser\redef.h" />
+		<Unit filename="Asser\uart.h" />
+		<Unit filename="Carto\astar.cpp" />
+		<Unit filename="Carto\astar.h" />
+		<Unit filename="Carto\carto.cpp" />
+		<Unit filename="Carto\carto.h" />
+		<Unit filename="Carto\config_carto.h" />
+		<Unit filename="Carto\data.cpp" />
+		<Unit filename="Carto\data.h" />
+		<Unit filename="Carto\help_main.cpp" />
+		<Unit filename="Carto\help_main.h" />
+		<Unit filename="Carto\malloc.cpp" />
+		<Unit filename="Carto\malloc.h" />
+		<Unit filename="Carto\message.cpp" />
+		<Unit filename="Carto\message.h" />
+		<Unit filename="Carto\uart.cpp" />
+		<Unit filename="Carto\uart.h" />
+		<Unit filename="Simu\CmptEngine.cpp" />
+		<Unit filename="Simu\CmptEngine.h" />
+		<Unit filename="Simu\Data.cpp" />
+		<Unit filename="Simu\Data.h" />
+		<Unit filename="Simu\GameEngine.cpp" />
+		<Unit filename="Simu\GameEngine.h" />
+		<Unit filename="Simu\GraphicEngine.cpp" />
+		<Unit filename="Simu\GraphicEngine.h" />
+		<Unit filename="Simu\IA.cpp" />
+		<Unit filename="Simu\IA.h" />
+		<Unit filename="Simu\IEngine.h" />
+		<Unit filename="Simu\IObject.cpp" />
+		<Unit filename="Simu\IObject.h" />
+		<Unit filename="Simu\Jeton.cpp" />
+		<Unit filename="Simu\Jeton.h" />
+		<Unit filename="Simu\JoysEngine.cpp" />
+		<Unit filename="Simu\JoysEngine.h" />
+		<Unit filename="Simu\Logger.cpp" />
+		<Unit filename="Simu\Logger.h" />
+		<Unit filename="Simu\Module.cpp" />
+		<Unit filename="Simu\Module.h" />
+		<Unit filename="Simu\ModuleAsser.cpp" />
+		<Unit filename="Simu\ModuleAsser.h" />
+		<Unit filename="Simu\ModuleCarto.cpp" />
+		<Unit filename="Simu\ModuleCarto.h" />
+		<Unit filename="Simu\ModuleTourelle.cpp" />
+		<Unit filename="Simu\ModuleTourelle.h" />
+		<Unit filename="Simu\PhysicEngine.cpp" />
+		<Unit filename="Simu\PhysicEngine.h" />
+		<Unit filename="Simu\Plateau.cpp" />
+		<Unit filename="Simu\Plateau.h" />
+		<Unit filename="Simu\Robot.cpp" />
+		<Unit filename="Simu\Robot.h" />
+		<Unit filename="Simu\config.h" />
+		<Unit filename="Simu\messages.h" />
+		<Unit filename="Simu\uart.cpp" />
+		<Unit filename="Simu\uart.h" />
+		<Unit filename="Soc\choixObjectif.cpp" />
+		<Unit filename="Soc\choixObjectif.h" />
+		<Unit filename="Soc\cluster.cpp" />
+		<Unit filename="Soc\cluster.h" />
+		<Unit filename="Soc\comAsser.cpp" />
+		<Unit filename="Soc\comAsser.h" />
+		<Unit filename="Soc\comCarto.cpp" />
+		<Unit filename="Soc\comCarto.h" />
+		<Unit filename="Soc\config.h" />
+		<Unit filename="Soc\cst.h" />
+		<Unit filename="Soc\espion.cpp" />
+		<Unit filename="Soc\espion.h" />
+		<Unit filename="Soc\machine.cpp" />
+		<Unit filename="Soc\machine.h" />
+		<Unit filename="Soc\outils.cpp" />
+		<Unit filename="Soc\outils.h" />
+		<Unit filename="Soc\recTourelle.cpp" />
+		<Unit filename="Soc\recTourelle.h" />
+		<Unit filename="Soc\remplirObj.cpp" />
+		<Unit filename="Soc\remplirObj.h" />
+		<Unit filename="Soc\signaux.cpp" />
+		<Unit filename="Soc\signaux.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,40 @@
+Programmer le PSoC avec le programme du dossier d'asser.
+Tous les réglages demandés par XBee sont perdus au reset. Il faut les écrire dans le programme d'asser et reflasher le PIC.
+
+Au démarrage le PSoC envoie un 'S' puis un 'R' par XBee lorsque la carte asser est prête. Si ces caractères réapparaissent plus tard, c'est qu'une carte a redémarré.
+
+Pour entrer en phase de test envoyer un 'p' par XBee (demande de 1 octet).
+
+Commandes générales XBee pour le PSoC (voir "../Diagnostic/README.txt" pour les formats entre '%') :
+	- r%2d<X>%%2d<Y>%%1d<P>% où <X>, <Y> et <P> sont en mm				-> déplacement au point donné
+		ex: r%2d1500%%2d1000%%1d10% demande à l'asser d'aller au centre du terrain à 1 cm près
+	- c%2d<X>%%2d<Y>%%1d<P>% où <X>, <Y> et <P> sont en mm				-> déplacement courbe au point donné
+	- a%2d<A>%%2d<P>% où <A> et <P> sont en degrés						-> rotation à A +-P
+	- Les mêmes en majuscule											-> déplacements relatifs à la position courante
+	- e<X> où <X> représente la direction du bord ('g', 'd' ou 'h')		-> recule jusqu'au bord et en déduit son angle et son emplacement en X OU Y
+	- p																	-> demande de position
+	- P																	-> pause / resume
+	- s																	-> arrête le robot (oublie les commandes de déplacement)
+	- d																	-> demande la commande en cours, /!\ Données non converties en [mm ; °] par le PSoC
+/!\ Attention à ne pas sortir de la table ! /!\
+
+Réglages :
+	Envoyer la lettre 't' sur XBee :
+		- la roue droite doit avancer puis reculer, puis la roue gauche...
+		- ...le plus lentement possible lorsque le robot est complètement chargé et que les batteries sont faibles (11 V)
+		- Si ces déplacements sont bons et que le robot renvoie 'b', les codeurs sont mal branchés.
+	Pour lire la vitesse minimale, envoyer 'm'. La vitesse minimum actuelle (MIN_SPEED) est définie dans "motors.h".
+	
+	Une accélération/décélération trop brutale fait déraper les roues motrices se qui dégrade son effet.
+	Pour lire la constante d'accélération, envoyer "f3". "F3" suivi de sa valeur sur un octet pour la modifier.
+
+	Pour freiner, le robot calcule la distance (linéaire ou angulaire) nécessaire à son arrêt. Cette distance est proportionnelle au carré de sa vitesse. 2 coefficients de proportionnalité sont réglables : en linéaire avec "F1" puis 2 octets et en angulaire avec "F2". ("f1" et "f2" pour lire)
+
+	Demander au robot de tourner => régler le nombre de ticks / tour (asser.h : TOUR) + générer NB_SIN, COEFF_ALPH_DELT et la table de sinus avec GeneSin.exe. GeneSin.exe copie TOUR dans asser.c pour le PSoC.
+	Demander au robot d'avancer droit et loin => régler le rapport ticks / distance (asser.h : METRE)
+	
+Debug :
+	Pour configurer les actions aux réceptions UART, envoyer "T<source><config>" sur XBee où <source> est 'A' ou 'X' pour Asser et XBee, et où <config> est '1' pour le traitement par PSoC (default) ou '2' pour la transmission au composant suivant.
+	Pour recevoir les informations envoyées au PSoC depuis l'asser tout en gardant le traitement par PSoC, envoyer "TA3"
+	Pour recevoir les informations envoyées à l'asser depuis le PSoC, envoyer "TA4". Le renvoyer pour annuler.
+	Pour recevoir les informations nécessaires au programme CourbesWin.exe (ou CourbesLin.exe), placer la couleur sur violet (2012), envoyer "TC" puis effacer les données courantes d'UARTerminal (gomme) et retirer les fenêtres de réception (trop de données). Demander les déplacements absolus qui vous intéressent. Finalement, enregistrer les données dans Input.bin dans le même dossier que CourbesWin.exe. Après avoir exécuté ce logiciel, les courbes des variables globales seront créées dans le dossier Outputs.

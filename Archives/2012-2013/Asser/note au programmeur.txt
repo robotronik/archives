@@ -1,0 +1,13 @@
+prière de commenter le code !
+
+En l'état le robot effectue une course infinie
+-> il faut recalculer les constantes tick to mm etc. ...
+
+note concernant le cablâge de la carte asser :
+noir : masse
+gris : 3.3V
+violet : Rx
+rouge : Tx
+
+note au mécano :
+le robot fait ce qu'il faut, en revanche les bras (heum ... heum ...) ne sont toujours pas fait ^^
