@@ -1,0 +1,29 @@
+$fn=50;
+longueur=100;
+largeur=80;
+epaisseur=5;
+decalage=5;
+rayon_aimant=3;
+epaisseur_aimant=2;
+
+module base()
+{
+difference()
+{
+	cube([longueur,largeur,epaisseur]);
+	translate([0,0,epaisseur-epaisseur_aimant])
+	union()
+	{
+		translate([decalage,decalage,0])
+			cylinder(h=epaisseur_aimant,r=rayon_aimant);
+		translate([longueur-decalage,decalage,0])
+			cylinder(h=epaisseur_aimant,r=rayon_aimant);
+		translate([decalage,largeur-decalage,0])
+			cylinder(h=epaisseur_aimant,r=rayon_aimant);
+		translate([longueur-decalage,largeur-decalage,0])
+			cylinder(h=epaisseur_aimant,r=rayon_aimant);
+		//translate([longueur/2,largeur/2,0])
+			//cylinder(h=epaisseur_aimant,r=rayon_aimant);
+}
+}
+}
